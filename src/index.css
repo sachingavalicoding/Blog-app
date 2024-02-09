@@ -22,13 +22,20 @@
   --text-dark: #131516;
   --text-normal: #555f61;
   --text-light: #c1c7c9;
+
+  --pd: 5% 10%;
+  --transition: all 0.4s linear;
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--light-color);
   width: 100%;
   min-height: 100vh;
-  color: var(--light-color);
+  color: var(--main-color);
+}
+
+.border-bottom {
+  border-bottom: 2px solid rgba(218, 218, 218, 0.514);
 }
 
 .container {
@@ -53,8 +60,16 @@ body {
   border-radius: 0.25em;
   position: relative;
   transition: all 0.4s linear;
+  background-color: var(--main-color);
+  color: var(--light-color);
 }
 .btn:hover {
+  transform: translateY(-8px);
+}
+svg {
+  transition: var(--transition);
+}
+svg:hover {
   transform: translateY(-8px);
 }
 
