@@ -3,6 +3,8 @@ import { SignIn, SignUp, AuthLayout } from "./auth"
 import { About, BlogLayout, Contact, Home } from "./pages"
 import { Navbar, Footer } from "./components/index"
 
+.0
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,6 +25,7 @@ const App = () => {
       </Routes>
       {/*  Footer  */}
       <Footer />
+
     </BrowserRouter>
   )
 }

@@ -1,0 +1,63 @@
+.recent__section {
+  min-height: 70vh;
+}
+
+.recent__container {
+  display: grid;
+  width: 95%;
+  margin: 0 auto;
+  grid-template-columns: 40% 1fr;
+  margin-top: 6rem;
+  height: 100%;
+}
+
+.recent__images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  gap: 3rem;
+  place-content: center;
+}
+.recent__images > * {
+  height: 23rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*  POpular  */
+.popular__lg-container {
+  width: 100%;
+  min-height: 60vh;
+  margin-top: 4rem;
+}
+.popular__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.popular__container img {
+  border-radius: 10px;
+}
+
+/*  Phone device  */
+@media screen and (max-width: 600px) {
+}
+/*  Tab device  */
+@media screen and (max-width: 768px) {
+  .recent__images {
+    grid-template-columns: 1fr;
+  }
+}
+/*  Mid device  */
+@media screen and (max-width: 1080px) {
+  .recent__container {
+    grid-template-columns: 1fr;
+  }
+  .popular__container {
+    grid-template-columns: 1fr;
+  }
+}
+/*  Lg  device  */
+@media screen and (max-width: 1200px) {
+}

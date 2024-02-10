@@ -25,6 +25,13 @@
 
   --pd: 5% 10%;
   --transition: all 0.4s linear;
+
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -77,4 +84,40 @@ svg:hover {
   border: 1px solid var(--tert-color);
   color: var(--light-color);
   background-color: var(--tert-color);
+}
+
+section {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*  Phone device  */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+/*  Tab device  */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+/*  Mid device  */
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 85%;
+  }
+}
+/*  Lg  device  */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
 }
