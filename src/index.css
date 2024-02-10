@@ -85,6 +85,17 @@ svg:hover {
   color: var(--light-color);
   background-color: var(--tert-color);
 }
+.light-btn {
+  color: var(--color-bg-variant);
+  background-color: rgb(238, 238, 238);
+  border: 2px solid transparent;
+}
+.dark-btn {
+  color: var(--light-color);
+  background-color: var(--main-color);
+
+  width: 100%;
+}
 
 section {
   margin-top: 3rem;

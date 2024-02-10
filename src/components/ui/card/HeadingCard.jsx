@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./card.css";
 // eslint-disable-next-line react/prop-types
 const HeadingCard = ({ heading, subheading, content, path }) => {
   return (
@@ -6,7 +7,7 @@ const HeadingCard = ({ heading, subheading, content, path }) => {
       <h4> {subheading} </h4>
       <h2> {heading} </h2>
       <p> {content} </p>
-      <button className="btn ">
+      <button className="btn heading__btn ">
         <Link to={path}> Read more </Link>
       </button>
     </div>

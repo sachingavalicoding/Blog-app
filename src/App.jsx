@@ -1,9 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { SignIn, SignUp, AuthLayout } from "./auth"
-import { About, BlogLayout, Contact, Home } from "./pages"
-import { Navbar, Footer } from "./components/index"
-
-.0
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SignIn, SignUp, AuthLayout } from "./auth";
+import { About, BlogLayout, Contact, Home } from "./pages";
+import { Navbar, Footer } from "./components/index";
 
 const App = () => {
   return (
@@ -25,9 +23,8 @@ const App = () => {
       </Routes>
       {/*  Footer  */}
       <Footer />
-
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

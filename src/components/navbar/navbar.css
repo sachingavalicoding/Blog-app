@@ -128,3 +128,7 @@
     width: 22rem;
   }
 }
+
+a {
+  color: var(--main-color);
+}

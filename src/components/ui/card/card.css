@@ -60,3 +60,7 @@
     padding: 13% 2%;
   }
 }
+
+.heading__btn a {
+  color: var(--light-color);
+}
