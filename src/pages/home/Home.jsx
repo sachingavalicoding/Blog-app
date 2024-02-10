@@ -1,10 +1,15 @@
+import TopHeading from "../../components/navbar/TopHeading"
+import TopNav from "../../components/navbar/TopNav"
 import HeroPage from "./Hero/HeroPage"
 import Popular from "./popular/Popular"
 import Recent from "./recent/Recent"
-
+import "../../components/navbar/navbar.css"
 const Home = () => {
     return (
         <>
+
+            <TopNav />
+            <TopHeading />
             <HeroPage />
             <Recent />
             <Popular

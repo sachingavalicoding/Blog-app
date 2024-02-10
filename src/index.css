@@ -96,6 +96,10 @@ img {
   object-fit: cover;
   display: block;
 }
+a {
+  color: white;
+  font-weight: 400;
+}
 
 /*  Phone device  */
 @media screen and (max-width: 600px) {

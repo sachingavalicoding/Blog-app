@@ -1,13 +1,12 @@
 #contact {
   width: 100%;
   min-height: 100vh;
+  background: black;
+  padding: 5% 10%;
   background-image: linear-gradient(
-    to top,
-    #334cc2,
-    #2f42bc,
-    #2d39b6,
-    #2b2eaf,
-    #2923a8
+    to right,
+    rgb(21, 33, 34),
+    rgb(0, 133, 199)
   );
 }
 
@@ -36,13 +35,11 @@
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
-  border: 1px solid transparent;
   transition: var(--transition);
+
+  border: 1px solid var(--color-primary);
 }
-.contact__option:hover {
-  background: transparent;
-  border-color: var(--color-primary);
-}
+
 .contact__option-icon {
   color: var(--color-primary);
   transition: var(--transition);
@@ -50,13 +47,21 @@
   margin-bottom: 0.4rem;
 }
 .contact__option:hover .contact__option-icon {
-  color: var(--color-white);
+  color: var(--light-color);
 }
 
 .contact__option a {
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
+  color: var(--light-color);
+}
+
+.contact__option h4 {
+  color: var(--light-color);
+}
+.contact__option h5 {
+  color: var(--tert-color);
 }
 
 /* =====================FORM====================== */

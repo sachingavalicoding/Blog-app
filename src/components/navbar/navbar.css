@@ -48,7 +48,7 @@
   height: 40px;
   padding: 0.51rem;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  background-color: var(--sec-color);
   color: var(--light-color);
 }
 
