@@ -5,7 +5,7 @@ import { Navbar, Footer } from "./components/index";
 import Preview from "./pages/blogs/Preview";
 import TopHeading from "./components/navbar/TopHeading";
 import TopNav from "./components/navbar/TopNav";
-
+import BlogForm from "./pages/blogs/BlogForm";
 const App = () => {
   return (
     <BrowserRouter>
@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<BlogLayout />} />
         <Route path="/preview" element={<Preview />} />
+        <Route path="/addblog" element={<BlogForm />} />
       </Routes>
       {/*  Footer  */}
       <Footer />

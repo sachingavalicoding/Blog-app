@@ -101,6 +101,29 @@
   width: 100%;
 }
 
+.blogform__container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  gap: 1rem;
+}
+.blogform__container input {
+  color: var(--color-bg-variant);
+}
+.checkbox {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+}
+.checkbox input {
+  width: 3rem;
+}
+
 /*  Phone device  */
 @media screen and (max-width: 600px) {
 }
