@@ -2,11 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SignIn, SignUp, AuthLayout } from "./auth";
 import { About, BlogLayout, Contact, Home } from "./pages";
 import { Navbar, Footer } from "./components/index";
+import Preview from "./pages/blogs/Preview";
+import TopHeading from "./components/navbar/TopHeading";
+import TopNav from "./components/navbar/TopNav";
 
 const App = () => {
   return (
     <BrowserRouter>
       {/* Navbar  */}
+      <TopNav />
+      <TopHeading />
       <Navbar />
       <Routes>
         {/*  Private Route  */}
@@ -20,6 +25,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<BlogLayout />} />
+        <Route path="/preview" element={<Preview />} />
       </Routes>
       {/*  Footer  */}
       <Footer />

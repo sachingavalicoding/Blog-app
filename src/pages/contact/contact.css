@@ -49,6 +49,10 @@
 .contact__option:hover .contact__option-icon {
   color: var(--light-color);
 }
+.contact__option:hover {
+  background-color: var(--tert-color);
+  color: var(--light-color);
+}
 
 .contact__option a {
   margin-top: 0.7rem;
@@ -60,10 +64,13 @@
 .contact__option h4 {
   color: var(--light-color);
 }
+
 .contact__option h5 {
   color: var(--tert-color);
 }
-
+.contact__option:hover h5 {
+  color: var(--light-color);
+}
 /* =====================FORM====================== */
 form {
   display: flex;

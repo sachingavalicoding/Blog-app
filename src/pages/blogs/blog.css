@@ -44,14 +44,13 @@
 .blog__wrapper {
   margin-top: 3rem;
   width: 100%;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 .post {
   width: 100%;
-  padding: 0.4rem 0.9rem;
+  padding: 0.4rem 1.4rem;
   display: grid;
   grid-template-rows: 1fr 12rem;
 }
@@ -87,6 +86,21 @@
   color: red;
 }
 
+/*  Preview section  */
+
+.preview__container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.preview__container img {
+  max-height: 70vh;
+  width: 100%;
+}
+
 /*  Phone device  */
 @media screen and (max-width: 600px) {
 }
@@ -97,12 +111,15 @@
   }
 }
 /*  Mid device  */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   .blog__container {
     padding: 1% 2%;
   }
   .blog__wrapper {
     grid-template-columns: 1fr;
+  }
+  .preview__container img {
+    object-fit: contain;
   }
 }
 /*  Lg  device  */
