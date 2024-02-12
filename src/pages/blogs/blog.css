@@ -109,7 +109,8 @@
   text-align: left;
   gap: 1rem;
 }
-.blogform__container input {
+.blogform__container input,
+.blogform__container textarea {
   color: var(--color-bg-variant);
 }
 .checkbox {
