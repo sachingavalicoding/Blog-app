@@ -8,7 +8,6 @@ const BlogForm = () => {
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
   const [is_public, setIsPublic] = useState(false);
-
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setImage(file);
@@ -24,13 +23,18 @@ const BlogForm = () => {
         image
       );
 
+      const result = storeage.getFilePreview(
+        "65c551d32bbbc22f5dab",
+        fileResponse.$id
+      );
       // Create blog post document
       const blogData = {
         title,
         author,
         content,
-        image: fileResponse.$id, // Use the file ID returned by Appwrite
+        image: result.href, // Use the file ID returned by Appwrite
         is_public,
+        slug: "coding",
       };
 
       const documentResponse = await databases.createDocument(

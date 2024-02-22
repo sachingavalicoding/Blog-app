@@ -7,6 +7,7 @@ import TopHeading from "./components/navbar/TopHeading";
 import TopNav from "./components/navbar/TopNav";
 import BlogForm from "./pages/blogs/BlogForm";
 import BlogList from "./pages/blogs/BlogList";
+import Blogs from "./pages/blogs/Blogs";
 const App = () => {
   return (
     <BrowserRouter>
@@ -28,9 +29,10 @@ const App = () => {
         <Route path="/blogs" element={<BlogLayout />} />
         <Route path="/preview" element={<Preview />} />
         <Route path="/addblog" element={<BlogForm />} />
-        <Route path="bloglist" element={<BlogList />} />
+        <Route path="/bloglist" element={<BlogList />} />
+        <Route path="/getblog" element={<Blogs />} />
       </Routes>
-      {/*  Footer  */}
+      b{/*  Footer  */}
       <Footer />
     </BrowserRouter>
   );
